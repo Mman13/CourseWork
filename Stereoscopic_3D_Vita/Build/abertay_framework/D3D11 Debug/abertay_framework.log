@@ -1,0 +1,143 @@
+﻿Build started 22/04/2015 16:57:18.
+     1>Project "M:\Year_4\Applied_Games_Technologies\CourseWork\abertay_framework\abertay_framework.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "D3D11 Debug\abertay_framework.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         Generating shader code for textured_sprite_vs.hlsl
+         Generating shader code for textured_sprite_ps.hlsl
+         The system cannot find the path specified.
+         Generating shader code for default_3d_shader_ps.hlsl
+         The system cannot find the path specified.
+         Generating shader code for default_3d_shader_vs.hlsl
+         The system cannot find the path specified.
+         Generating shader code for skinning_shader_ps.hlsl
+         The system cannot find the path specified.
+         Generating shader code for skinning_shader_vs.hlsl
+         The system cannot find the path specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IM:\Year_4\Applied_Games_Technologies\CourseWork\abertay_framework\ /Iexternal\libpng /Iexternal\zlib /I"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\include" /Zi /nologo /W1 /WX- /Od /Oy- /D ABFW_PLATFORM_D3D11 /D WIN32 /D _WINDOWS /D _DEBUG /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"D3D11 Debug\\" /Fd"D3D11 Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt animation\animation.cpp animation\joint.cpp animation\skeleton.cpp application.cpp assets\obj_loader.cpp assets\png_loader.cpp graphics\colour.cpp graphics\d3d11\default_3d_shader_d3d11.cpp graphics\d3d11\default_sprite_shader_d3d11.cpp graphics\d3d11\mesh_d3d11.cpp graphics\d3d11\primitive_d3d11.cpp graphics\d3d11\renderer_3d_d3d11.cpp graphics\d3d11\render_target_d3d11.cpp graphics\d3d11\shader_d3d11.cpp graphics\d3d11\skinned_mesh_shader_d3d11.cpp graphics\d3d11\sprite_renderer_d3d11.cpp graphics\d3d11\texture_d3d11.cpp graphics\default_3d_shader_data.cpp graphics\font.cpp graphics\image_data.cpp graphics\mesh.cpp graphics\mesh_data.cpp graphics\mesh_instance.cpp graphics\model.cpp graphics\primitive.cpp graphics\renderer_3d.cpp graphics\render_target.cpp graphics\scene.cpp graphics\shader.cpp graphics\skinned_mesh_shader_data.cpp graphics\sprite.cpp graphics\sprite_renderer.cpp graphics\texture.cpp input\d3d11\sony_controller_input_manager_d3d11.cpp input\d3d11\touch_input_manager_d3d11.cpp input\sony_controller_input_manager.cpp input\touch_input_manager.cpp maths\aabb.cpp maths\matrix44.cpp maths\quaternion.cpp maths\sphere.cpp maths\transform.cpp maths\vector2.cpp maths\vector3.cpp maths\vector4.cpp system\crc.cpp system\d3d11\platform_d3d11.cpp system\file.cpp system\memory_stream_buffer.cpp system\platform.cpp system\string_id.cpp system\win32\debug_log_win32.cpp system\win32\file_win32.cpp system\win32\platform_win32_null_renderer.cpp system\win32\window_win32.cpp
+         animation.cpp
+         joint.cpp
+         skeleton.cpp
+         application.cpp
+         obj_loader.cpp
+         png_loader.cpp
+         colour.cpp
+         default_3d_shader_d3d11.cpp
+         default_sprite_shader_d3d11.cpp
+         mesh_d3d11.cpp
+         primitive_d3d11.cpp
+         renderer_3d_d3d11.cpp
+         render_target_d3d11.cpp
+         shader_d3d11.cpp
+         skinned_mesh_shader_d3d11.cpp
+         sprite_renderer_d3d11.cpp
+         texture_d3d11.cpp
+         default_3d_shader_data.cpp
+         font.cpp
+         image_data.cpp
+         Generating Code...
+         Compiling...
+         mesh.cpp
+         mesh_data.cpp
+         mesh_instance.cpp
+         model.cpp
+         primitive.cpp
+         renderer_3d.cpp
+         render_target.cpp
+         scene.cpp
+         shader.cpp
+         skinned_mesh_shader_data.cpp
+         sprite.cpp
+         sprite_renderer.cpp
+         texture.cpp
+         sony_controller_input_manager_d3d11.cpp
+         touch_input_manager_d3d11.cpp
+         sony_controller_input_manager.cpp
+         touch_input_manager.cpp
+         aabb.cpp
+         matrix44.cpp
+         quaternion.cpp
+         Generating Code...
+         Compiling...
+         sphere.cpp
+         transform.cpp
+         vector2.cpp
+         vector3.cpp
+         vector4.cpp
+         crc.cpp
+         platform_d3d11.cpp
+         file.cpp
+         memory_stream_buffer.cpp
+         platform.cpp
+         string_id.cpp
+         debug_log_win32.cpp
+         file_win32.cpp
+         platform_win32_null_renderer.cpp
+         window_win32.cpp
+         Generating Code...
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"M:\Year_4\Applied_Games_Technologies\CourseWork\CourseWork\D3D11 Debug\abertay_framework.lib" /NOLOGO "D3D11 Debug\animation.obj"
+         "D3D11 Debug\joint.obj"
+         "D3D11 Debug\skeleton.obj"
+         "D3D11 Debug\application.obj"
+         "D3D11 Debug\obj_loader.obj"
+         "D3D11 Debug\png_loader.obj"
+         "D3D11 Debug\colour.obj"
+         "D3D11 Debug\default_3d_shader_d3d11.obj"
+         "D3D11 Debug\default_sprite_shader_d3d11.obj"
+         "D3D11 Debug\mesh_d3d11.obj"
+         "D3D11 Debug\primitive_d3d11.obj"
+         "D3D11 Debug\renderer_3d_d3d11.obj"
+         "D3D11 Debug\render_target_d3d11.obj"
+         "D3D11 Debug\shader_d3d11.obj"
+         "D3D11 Debug\skinned_mesh_shader_d3d11.obj"
+         "D3D11 Debug\sprite_renderer_d3d11.obj"
+         "D3D11 Debug\texture_d3d11.obj"
+         "D3D11 Debug\default_3d_shader_data.obj"
+         "D3D11 Debug\font.obj"
+         "D3D11 Debug\image_data.obj"
+         "D3D11 Debug\mesh.obj"
+         "D3D11 Debug\mesh_data.obj"
+         "D3D11 Debug\mesh_instance.obj"
+         "D3D11 Debug\model.obj"
+         "D3D11 Debug\primitive.obj"
+         "D3D11 Debug\renderer_3d.obj"
+         "D3D11 Debug\render_target.obj"
+         "D3D11 Debug\scene.obj"
+         "D3D11 Debug\shader.obj"
+         "D3D11 Debug\skinned_mesh_shader_data.obj"
+         "D3D11 Debug\sprite.obj"
+         "D3D11 Debug\sprite_renderer.obj"
+         "D3D11 Debug\texture.obj"
+         "D3D11 Debug\sony_controller_input_manager_d3d11.obj"
+         "D3D11 Debug\touch_input_manager_d3d11.obj"
+         "D3D11 Debug\sony_controller_input_manager.obj"
+         "D3D11 Debug\touch_input_manager.obj"
+         "D3D11 Debug\aabb.obj"
+         "D3D11 Debug\matrix44.obj"
+         "D3D11 Debug\quaternion.obj"
+         "D3D11 Debug\sphere.obj"
+         "D3D11 Debug\transform.obj"
+         "D3D11 Debug\vector2.obj"
+         "D3D11 Debug\vector3.obj"
+         "D3D11 Debug\vector4.obj"
+         "D3D11 Debug\crc.obj"
+         "D3D11 Debug\platform_d3d11.obj"
+         "D3D11 Debug\file.obj"
+         "D3D11 Debug\memory_stream_buffer.obj"
+         "D3D11 Debug\platform.obj"
+         "D3D11 Debug\string_id.obj"
+         "D3D11 Debug\debug_log_win32.obj"
+         "D3D11 Debug\file_win32.obj"
+         "D3D11 Debug\platform_win32_null_renderer.obj"
+         "D3D11 Debug\window_win32.obj"
+         abertay_framework.vcxproj -> M:\Year_4\Applied_Games_Technologies\CourseWork\CourseWork\D3D11 Debug\abertay_framework.lib
+       FinalizeBuildStatus:
+         Deleting file "D3D11 Debug\abertay_framework.unsuccessfulbuild".
+         Touching "D3D11 Debug\abertay_framework.lastbuildstate".
+     1>Done Building Project "M:\Year_4\Applied_Games_Technologies\CourseWork\abertay_framework\abertay_framework.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:21.08

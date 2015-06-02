@@ -1,0 +1,920 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="D3D11 Release|PSVita">
+      <Configuration>D3D11 Release</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="D3D11 Release|Win32">
+      <Configuration>D3D11 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|PSVita">
+      <Configuration>Debug</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="D3D11 Debug|PSVita">
+      <Configuration>D3D11 Debug</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="D3D11 Debug|Win32">
+      <Configuration>D3D11 Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|PSVita">
+      <Configuration>Release</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{001D0F7F-2FA7-461E-82BF-808B1BAACF98}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'" Label="PropertySheets" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'" Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <IncludePath>.;external/zlib;external/libpng;$(SCE_PSP2_SDK_DIR)\host_tools\build\include;$(SCE_PSP2_SDK_DIR)\target\include;$(SCE_PSP2_SDK_DIR)\target\include_common;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">
+    <IncludePath>.;external/zlib;external/libpng;$(SCE_PSP2_SDK_DIR)\host_tools\build\include;$(SCE_PSP2_SDK_DIR)\target\include;$(SCE_PSP2_SDK_DIR)\target\include_common;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <ClCompile>
+      <PreprocessorDefinitions>Z_SOLO;NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\external\libpng;$(ProjectDir)\external\zlib</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">
+    <ClCompile>
+      <PreprocessorDefinitions>Z_SOLO;NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\external\libpng;$(ProjectDir)\external\zlib</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>ABFW_PLATFORM_D3D11;Z_SOLO;_DEBUG;_WINDOWS;WIN32;_LIB</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\external\libpng;$(ProjectDir)\external\zlib</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);external\libpng;external\zlib;%DXSDK_DIR%\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ABFW_PLATFORM_D3D11;WIN32;_WINDOWS;_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\external\libpng;;$(ProjectDir)\external\zlib</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>Z_SOLO;_DEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);external\libpng;external\zlib;%DXSDK_DIR%\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ABFW_PLATFORM_D3D11;WIN32;_WINDOWS;NDEBUG</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\external\libpng;$(ProjectDir)\external\zlib</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\external\libpng;$(ProjectDir)\external\zlib;%DXSDK_DIR%\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="graphics\vita\shaders\clear_f.cg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\clear_v.cg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\textured_sprite_f.cg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\textured_sprite_v.cg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abertay_framework.h" />
+    <ClInclude Include="animation\animation.h" />
+    <ClInclude Include="animation\joint.h" />
+    <ClInclude Include="animation\skeleton.h" />
+    <ClInclude Include="assets\obj_loader.h" />
+    <ClInclude Include="assets\png_loader.h" />
+    <ClInclude Include="audio\audio_manager.h" />
+    <ClInclude Include="audio\vita\audio_manager_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\colour.h" />
+    <ClInclude Include="graphics\d3d11\default_3d_shader_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\default_sprite_shader_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\mesh_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\primitive_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\renderer_3d_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\render_target_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\default_3d_shader_ps.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\default_3d_shader_vs.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\skinning_shader_ps.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\skinning_shader_vs.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\textured_sprite_ps.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\textured_sprite_vs.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shader_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\skinned_mesh_shader_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\sprite_renderer_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\texture_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\default_3d_shader_data.h" />
+    <ClInclude Include="graphics\font.h" />
+    <ClInclude Include="graphics\image_data.h" />
+    <ClInclude Include="graphics\mesh.h" />
+    <ClInclude Include="graphics\mesh_data.h" />
+    <ClInclude Include="graphics\mesh_instance.h" />
+    <ClInclude Include="graphics\model.h" />
+    <ClInclude Include="graphics\point_light.h" />
+    <ClInclude Include="graphics\primitive.h" />
+    <ClInclude Include="graphics\renderer_3d.h" />
+    <ClInclude Include="graphics\render_target.h" />
+    <ClInclude Include="graphics\scene.h" />
+    <ClInclude Include="graphics\shader.h" />
+    <ClInclude Include="graphics\skinned_mesh_shader_data.h" />
+    <ClInclude Include="graphics\sprite.h" />
+    <ClInclude Include="graphics\sprite_renderer.h" />
+    <ClInclude Include="graphics\texture.h" />
+    <ClInclude Include="graphics\vita\default_3d_shader_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\mesh_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\primitive_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\renderer_3d_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\render_target_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\shader_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\skinned_mesh_shader_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\sprite_renderer_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\texture_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="input\d3d11\sony_controller_input_manager_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="input\d3d11\touch_input_manager_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="input\sony_controller_input_manager.h" />
+    <ClInclude Include="input\touch_input_manager.h" />
+    <ClInclude Include="input\vita\sony_controller_input_manager_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="input\vita\touch_input_manager_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="maths\aabb.h" />
+    <ClInclude Include="maths\math_utils.h" />
+    <ClInclude Include="maths\matrix44.h" />
+    <ClInclude Include="maths\quaternion.h" />
+    <ClInclude Include="maths\sphere.h" />
+    <ClInclude Include="maths\transform.h" />
+    <ClInclude Include="maths\vector2.h" />
+    <ClInclude Include="maths\vector3.h" />
+    <ClInclude Include="maths\vector4.h" />
+    <ClInclude Include="system\application.h" />
+    <ClInclude Include="system\crc.h" />
+    <ClInclude Include="system\d3d11\platform_d3d11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="system\debug_log.h" />
+    <ClInclude Include="system\file.h" />
+    <ClInclude Include="system\memory_stream_buffer.h" />
+    <ClInclude Include="system\platform.h" />
+    <ClInclude Include="system\string_id.h" />
+    <ClInclude Include="system\vita\file_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="system\vita\platform_vita.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="system\win32\file_win32.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="system\win32\platform_win32_null_renderer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="system\win32\window_win32.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animation\animation.cpp" />
+    <ClCompile Include="animation\joint.cpp" />
+    <ClCompile Include="animation\skeleton.cpp" />
+    <ClCompile Include="application.cpp" />
+    <ClCompile Include="assets\obj_loader.cpp" />
+    <ClCompile Include="assets\png_loader.cpp" />
+    <ClCompile Include="audio\audio_manager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="audio\vita\audio_manager_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\colour.cpp" />
+    <ClCompile Include="graphics\d3d11\default_3d_shader_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\default_sprite_shader_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\mesh_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\primitive_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\renderer_3d_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\render_target_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\shader_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\skinned_mesh_shader_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\sprite_renderer_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\texture_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\default_3d_shader_data.cpp" />
+    <ClCompile Include="graphics\font.cpp" />
+    <ClCompile Include="graphics\image_data.cpp" />
+    <ClCompile Include="graphics\mesh.cpp" />
+    <ClCompile Include="graphics\mesh_data.cpp" />
+    <ClCompile Include="graphics\mesh_instance.cpp" />
+    <ClCompile Include="graphics\model.cpp" />
+    <ClCompile Include="graphics\primitive.cpp" />
+    <ClCompile Include="graphics\renderer_3d.cpp" />
+    <ClCompile Include="graphics\render_target.cpp" />
+    <ClCompile Include="graphics\scene.cpp" />
+    <ClCompile Include="graphics\shader.cpp" />
+    <ClCompile Include="graphics\skinned_mesh_shader_data.cpp" />
+    <ClCompile Include="graphics\sprite.cpp" />
+    <ClCompile Include="graphics\sprite_renderer.cpp" />
+    <ClCompile Include="graphics\texture.cpp" />
+    <ClCompile Include="graphics\vita\default_3d_shader_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\mesh_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\primitive_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\renderer_3d_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\render_target_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\shader_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\skinned_mesh_shader_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\sprite_renderer_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\texture_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="input\d3d11\sony_controller_input_manager_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="input\d3d11\touch_input_manager_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="input\sony_controller_input_manager.cpp" />
+    <ClCompile Include="input\touch_input_manager.cpp" />
+    <ClCompile Include="input\vita\sony_controller_input_manager_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="input\vita\touch_input_manager_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="maths\aabb.cpp" />
+    <ClCompile Include="maths\matrix44.cpp" />
+    <ClCompile Include="maths\quaternion.cpp" />
+    <ClCompile Include="maths\sphere.cpp" />
+    <ClCompile Include="maths\transform.cpp" />
+    <ClCompile Include="maths\vector2.cpp" />
+    <ClCompile Include="maths\vector3.cpp" />
+    <ClCompile Include="maths\vector4.cpp" />
+    <ClCompile Include="system\crc.cpp" />
+    <ClCompile Include="system\d3d11\platform_d3d11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="system\file.cpp" />
+    <ClCompile Include="system\memory_stream_buffer.cpp" />
+    <ClCompile Include="system\platform.cpp" />
+    <ClCompile Include="system\string_id.cpp" />
+    <ClCompile Include="system\vita\debug_log_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="system\vita\file_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="system\vita\platform_vita.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="system\win32\debug_log_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="system\win32\file_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="system\win32\platform_win32_null_renderer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="system\win32\window_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="graphics\d3d11\shaders\textured_sprite_vs.hlsl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd  %(RelativeDir)
+$(ProjectDir)\tools\xxd -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building shader source from %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\textured_sprite_ps.hlsl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd %(RelativeDir)
+$(ProjectDir)\tools\xxd -i %(Filename)%(Extension) &gt; %(Filename).h
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building shader source from %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <Compile_PSSL_To_Header Include="graphics\ps4\shader_p.pssl">
+      <FileType>Document</FileType>
+    </Compile_PSSL_To_Header>
+    <CustomBuild Include="graphics\vita\shaders\default_3d_shader_f.cg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\default_3d_shader_v.cg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\default_3d_shader_ps.hlsl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\default_3d_shader_vs.hlsl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\skinning_shader_ps.hlsl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\skinning_shader_vs.hlsl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">cd %(RelativeDir)
+$(ProjectDir)tools\xxd.exe -i %(Filename)%(Extension) &gt; %(Filename).h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">Generating shader code for %(Filename)%(Extension)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\skinning_shader_v.cg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Debug|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_vp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">Compiling Vertex Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\skinning_shader_f.cg">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">"$(SCE_PSP2_SDK_DIR)/host_tools/bin/psp2cgc.exe" --cache --profile sce_fp_psp2 "%(RootDir)%(Directory)\%(Filename).cg" -o "$(IntDir)%(Filename).gxp"&amp;&amp;"$(SCE_PSP2_SDK_DIR)/host_tools/build/bin/psp2bin.exe" "$(IntDir)%(Filename).gxp" -b2e PSP2,_binary_%(Filename)_gxp_start,_binary_%(Filename)_gxp_size,4 -o "$(IntDir)%(Filename)_gxp.obj"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">Compiling Fragment Shader: "%(FullPath)"</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|PSVita'">$(IntDir)%(Filename)_gxp.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='D3D11 Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="maths\quaternion.inl" />
+    <None Include="maths\vector2.inl" />
+    <None Include="maths\vector3.inl" />
+    <None Include="maths\vector4.inl" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <!-- <Import Project="$(SCE_ORBIS_SDK_DIR)\host_tools\msbuild\SceGnm.targets" Condition="!Exists('$(SolutionDir)\SceGnm.Development.props')" /> -->
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

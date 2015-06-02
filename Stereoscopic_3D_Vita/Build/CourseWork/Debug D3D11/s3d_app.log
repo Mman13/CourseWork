@@ -1,0 +1,19 @@
+﻿Build started 27/04/2015 12:30:15.
+     1>Project "M:\Year_4\Applied_Games_Technologies\CourseWork\CourseWork\s3d_app.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug D3D11\Coursework_s3D.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         s3d_app.vcxproj -> M:\Year_4\Applied_Games_Technologies\CourseWork\CourseWork\Debug D3D11\Coursework_s3D.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug D3D11\Coursework_s3D.unsuccessfulbuild".
+         Touching "Debug D3D11\Coursework_s3D.lastbuildstate".
+     1>Done Building Project "M:\Year_4\Applied_Games_Technologies\CourseWork\CourseWork\s3d_app.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.29

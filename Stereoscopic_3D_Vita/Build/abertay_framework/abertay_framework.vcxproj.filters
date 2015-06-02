@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="system">
+      <UniqueIdentifier>{4b15c15a-1150-440d-83c8-eb3838d443e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maths">
+      <UniqueIdentifier>{7cd8b65b-0b8b-451a-b68d-2a972d94fe86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{0ff647ae-bf8c-4423-8a48-7293030bda65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{01defe14-d995-4d21-bab1-8d0a01ebf90f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\vita">
+      <UniqueIdentifier>{ef02efd6-7d2e-4073-99b2-49ba95b47bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\vita\shaders">
+      <UniqueIdentifier>{ad95ebda-6cdc-461c-bff3-cd715d8b1726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{6c6cefcc-eee5-4564-9275-37b522cc429e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input\vita">
+      <UniqueIdentifier>{6bb9bf67-ba84-413a-94d7-fe47eceda550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\vita">
+      <UniqueIdentifier>{05ab9a2a-748d-4976-9b55-56dfbb06b200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio\vita">
+      <UniqueIdentifier>{9a6c29f5-89a7-4ea5-a716-0b12f13610cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\d3d11">
+      <UniqueIdentifier>{11ea2662-9e2b-46f1-be5f-0443d33f5f59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\d3d11">
+      <UniqueIdentifier>{dab9cc77-731c-497f-85ae-3dc961ee5103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\d3d11\shaders">
+      <UniqueIdentifier>{79cdbd8f-0cb0-46ee-ae65-668f3cd3a093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\d3d11\shaders\Generated Header Files">
+      <UniqueIdentifier>{50150c1f-0fac-4032-8ce0-0999950d6112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input\d3d11">
+      <UniqueIdentifier>{0787fa7f-512f-4e02-b83b-b4c90337fed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\win32">
+      <UniqueIdentifier>{52ec1f45-2d99-4ba6-a27d-bbdd2594c937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{6e847140-e1f9-4711-9a8c-bd2ac2d46956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="animation">
+      <UniqueIdentifier>{4bf98a46-e7c5-4035-b31b-99e0b0f86038}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="graphics\vita\shaders\clear_f.cg">
+      <Filter>graphics\vita\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\textured_sprite_v.cg">
+      <Filter>graphics\vita\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\clear_v.cg">
+      <Filter>graphics\vita\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\textured_sprite_f.cg">
+      <Filter>graphics\vita\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\textured_sprite_ps.hlsl">
+      <Filter>graphics\d3d11\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\default_3d_shader_v.cg">
+      <Filter>graphics\vita\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\default_3d_shader_f.cg">
+      <Filter>graphics\vita\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\default_3d_shader_ps.hlsl">
+      <Filter>graphics\d3d11\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\default_3d_shader_vs.hlsl">
+      <Filter>graphics\d3d11\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\skinning_shader_ps.hlsl">
+      <Filter>graphics\d3d11\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\skinning_shader_vs.hlsl">
+      <Filter>graphics\d3d11\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\skinning_shader_v.cg">
+      <Filter>graphics\vita\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\vita\shaders\skinning_shader_f.cg">
+      <Filter>graphics\vita\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphics\d3d11\shaders\textured_sprite_vs.hlsl">
+      <Filter>graphics\d3d11\shaders</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="maths\math_utils.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="maths\matrix44.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="maths\quaternion.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="maths\vector2.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="maths\vector3.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="maths\vector4.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\sprite.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\texture.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="system\vita\file_vita.h">
+      <Filter>system\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="system\vita\platform_vita.h">
+      <Filter>system\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="system\application.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\platform.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\file.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\texture_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\sprite_renderer.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\sprite_renderer_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="abertay_framework.h" />
+    <ClInclude Include="audio\vita\audio_manager_vita.h">
+      <Filter>audio\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\audio_manager.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="input\vita\touch_input_manager_vita.h">
+      <Filter>input\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="input\touch_input_manager.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\image_data.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\colour.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\font.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="system\memory_stream_buffer.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\d3d11\platform_d3d11.h">
+      <Filter>system\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\texture_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\sprite_renderer_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\default_sprite_shader_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shader_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\shader.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="input\d3d11\touch_input_manager_d3d11.h">
+      <Filter>input\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\default_3d_shader_data.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\renderer_3d.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\point_light.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\default_3d_shader_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\renderer_3d_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\mesh_instance.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\mesh.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\primitive.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\primitive_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\mesh_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="input\sony_controller_input_manager.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\shader_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\default_3d_shader_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\renderer_3d_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\mesh_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\primitive_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="system\win32\window_win32.h">
+      <Filter>system\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="system\win32\file_win32.h">
+      <Filter>system\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\render_target.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\render_target_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="input\vita\sony_controller_input_manager_vita.h">
+      <Filter>input\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\render_target_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="assets\png_loader.h">
+      <Filter>assets</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\model.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="assets\obj_loader.h">
+      <Filter>assets</Filter>
+    </ClInclude>
+    <ClInclude Include="maths\sphere.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="maths\aabb.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="maths\transform.h">
+      <Filter>maths</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\joint.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="system\string_id.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\crc.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\animation.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation\skeleton.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\mesh_data.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\scene.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="system\win32\platform_win32_null_renderer.h">
+      <Filter>system\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\skinned_mesh_shader_data.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\skinned_mesh_shader_d3d11.h">
+      <Filter>graphics\d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\default_3d_shader_ps.h">
+      <Filter>graphics\d3d11\shaders\Generated Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\textured_sprite_vs.h">
+      <Filter>graphics\d3d11\shaders\Generated Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\default_3d_shader_vs.h">
+      <Filter>graphics\d3d11\shaders\Generated Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\skinning_shader_ps.h">
+      <Filter>graphics\d3d11\shaders\Generated Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\skinning_shader_vs.h">
+      <Filter>graphics\d3d11\shaders\Generated Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d3d11\shaders\textured_sprite_ps.h">
+      <Filter>graphics\d3d11\shaders\Generated Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\vita\skinned_mesh_shader_vita.h">
+      <Filter>graphics\vita</Filter>
+    </ClInclude>
+    <ClInclude Include="system\debug_log.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="input\d3d11\sony_controller_input_manager_d3d11.h">
+      <Filter>input\d3d11</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="maths\matrix44.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="maths\quaternion.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="maths\vector3.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="maths\vector4.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\sprite.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="system\vita\file_vita.cpp">
+      <Filter>system\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="system\vita\platform_vita.cpp">
+      <Filter>system\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\texture_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\sprite_renderer.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\sprite_renderer_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\platform.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\vita\audio_manager_vita.cpp">
+      <Filter>audio\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="input\vita\touch_input_manager_vita.cpp">
+      <Filter>input\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="input\touch_input_manager.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="maths\vector2.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\image_data.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\texture.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\colour.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\font.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="system\memory_stream_buffer.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\d3d11\platform_d3d11.cpp">
+      <Filter>system\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\texture_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\sprite_renderer_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\default_sprite_shader_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\shader_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\shader.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="input\d3d11\touch_input_manager_d3d11.cpp">
+      <Filter>input\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\default_3d_shader_data.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\renderer_3d.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\default_3d_shader_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\renderer_3d_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\mesh_instance.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\mesh.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\primitive.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\primitive_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\mesh_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="input\sony_controller_input_manager.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\shader_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\default_3d_shader_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\renderer_3d_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\mesh_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\primitive_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="system\win32\file_win32.cpp">
+      <Filter>system\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="system\win32\window_win32.cpp">
+      <Filter>system\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="audio\audio_manager.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\render_target.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\render_target_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="input\vita\sony_controller_input_manager_vita.cpp">
+      <Filter>input\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\render_target_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="assets\png_loader.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="assets\obj_loader.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="maths\sphere.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="maths\aabb.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\model.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="system\file.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="maths\transform.cpp">
+      <Filter>maths</Filter>
+    </ClCompile>
+    <ClCompile Include="system\string_id.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\crc.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="animation\animation.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="animation\skeleton.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\scene.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\mesh_data.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="system\win32\platform_win32_null_renderer.cpp">
+      <Filter>system\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="animation\joint.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\skinned_mesh_shader_data.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d3d11\skinned_mesh_shader_d3d11.cpp">
+      <Filter>graphics\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\vita\skinned_mesh_shader_vita.cpp">
+      <Filter>graphics\vita</Filter>
+    </ClCompile>
+    <ClCompile Include="system\win32\debug_log_win32.cpp">
+      <Filter>system\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="input\d3d11\sony_controller_input_manager_d3d11.cpp">
+      <Filter>input\d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="system\vita\debug_log_vita.cpp">
+      <Filter>system\vita</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="maths\quaternion.inl">
+      <Filter>maths</Filter>
+    </None>
+    <None Include="maths\vector2.inl">
+      <Filter>maths</Filter>
+    </None>
+    <None Include="maths\vector3.inl">
+      <Filter>maths</Filter>
+    </None>
+    <None Include="maths\vector4.inl">
+      <Filter>maths</Filter>
+    </None>
+  </ItemGroup>
+</Project>

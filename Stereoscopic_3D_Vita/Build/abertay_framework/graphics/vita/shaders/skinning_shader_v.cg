@@ -1,0 +1,100 @@
+#define NUM_LIGHTS 4
+#define NUM_BONE_MATRICES 128
+
+struct VertexInput
+{
+	float3 position : POSITION;
+	float3 normal : NORMAL;
+	int4 blendindices : BLENDINDICES;
+	float4 blendweights : BLENDWEIGHT;
+	float2 uv : TEXCOORD0;
+};
+
+struct PixelInput
+{
+	float4 position : POSITION;
+	float3 normal : TEXCOORD0;
+	float2 uv : TEXCOORD1;
+	float3 light_vector1 : TEXCOORD2;
+	float3 light_vector2 : TEXCOORD3;
+	float3 light_vector3 : TEXCOORD4;
+	float3 light_vector4 : TEXCOORD5;
+};
+
+struct Default3DShaderData_VS
+{
+	float4x4 wvp;
+	float4x4 world;
+	float4 light_position[NUM_LIGHTS];
+};
+
+struct BoneMatricesBuffer
+{
+   float4x4 bone_matrices[NUM_BONE_MATRICES];
+};
+
+void main(
+	float3 input_position : POSITION,
+	float3 input_normal : NORMAL,
+	int4 input_blendindices : BLENDINDICES,
+	float4 input_blendweights : BLENDWEIGHT,
+	float2 input_uv : TEXCOORD0,
+	uniform float4x4 shader_data_wvp,
+	uniform float4x4 shader_data_world,
+	uniform float4 shader_data_light_position[NUM_LIGHTS],
+	uniform float4x4 bone_matrices[NUM_BONE_MATRICES],
+	float4 out output_position : POSITION,
+	float3 out output_normal : TEXCOORD0,
+	float2 out output_uv : TEXCOORD1,
+	float3 out output_light_vector1 : TEXCOORD2,
+	float3 out output_light_vector2 : TEXCOORD3,
+	float3 out output_light_vector3 : TEXCOORD4,
+	float3 out output_light_vector4 : TEXCOORD5
+	)
+{
+	float4 position = float4(input_position, 1);
+	float4 normal = float4(input_normal, 0);
+/*
+	int4 indices = int4(
+	(input_blendindices & 0x000000ff),
+	(input_blendindices & 0x0000ff00) >> 8,
+	(input_blendindices & 0x00ff0000) >> 16,
+	(input_blendindices & 0xff000000) >> 24
+	);
+*/
+
+	int4 indices = input_blendindices;
+	// bone 0
+	float4 world_position = input_blendweights.x*mul(position, bone_matrices[indices.x]);
+	float4 temp_normal = input_blendweights.x*mul(normal, bone_matrices[indices.x]);
+
+	// bone 1
+	world_position += input_blendweights.y*mul(position, bone_matrices[indices.y]);
+	temp_normal += input_blendweights.y*mul(normal, bone_matrices[indices.y]);
+	
+	// bone 2
+	world_position += input_blendweights.z*mul(position, bone_matrices[indices.z]);
+	temp_normal += input_blendweights.z*mul(normal, bone_matrices[indices.z]);
+
+	// bone 3
+	world_position += input_blendweights.w*mul(position, bone_matrices[indices.w]);
+	temp_normal += input_blendweights.w*mul(normal, bone_matrices[indices.w]);
+
+	output_position = mul(world_position, shader_data_wvp);
+
+	temp_normal = mul(temp_normal, shader_data_world);
+	output_normal = normalize(temp_normal.xyz);
+
+	output_uv = input_uv;
+
+
+	world_position = mul(position, shader_data_world);
+	output_light_vector1 = shader_data_light_position[0].xyz - world_position.xyz;
+	output_light_vector1 = normalize(output_light_vector1);
+	output_light_vector2 = shader_data_light_position[1].xyz - world_position.xyz;
+	output_light_vector2 = normalize(output_light_vector2);
+	output_light_vector3 = shader_data_light_position[2].xyz - world_position.xyz;
+	output_light_vector3 = normalize(output_light_vector3);
+	output_light_vector4 = shader_data_light_position[3].xyz - world_position.xyz;
+	output_light_vector4 = normalize(output_light_vector4);
+}

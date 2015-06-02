@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|PSVita">
+      <Configuration>Debug</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|PSVita">
+      <Configuration>Release</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53616666-75E8-489B-9B43-EBCB4FFCBF48}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <IncludePath>..;$(SCE_PSP2_SDK_DIR)\host_tools\build\include;$(SCE_PSP2_SDK_DIR)\target\include;$(SCE_PSP2_SDK_DIR)\target\include_common;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <IncludePath>..;$(SCE_PSP2_SDK_DIR)\host_tools\build\include;$(SCE_PSP2_SDK_DIR)\target\include;$(SCE_PSP2_SDK_DIR)\target\include_common;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_LIB</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_LIB</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Box2D.h" />
+    <ClInclude Include="Collision\b2BroadPhase.h" />
+    <ClInclude Include="Collision\b2Collision.h" />
+    <ClInclude Include="Collision\b2Distance.h" />
+    <ClInclude Include="Collision\b2DynamicTree.h" />
+    <ClInclude Include="Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="Collision\Shapes\b2ChainShape.h" />
+    <ClInclude Include="Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="Collision\Shapes\b2EdgeShape.h" />
+    <ClInclude Include="Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="Common\b2BlockAllocator.h" />
+    <ClInclude Include="Common\b2Draw.h" />
+    <ClInclude Include="Common\b2GrowableStack.h" />
+    <ClInclude Include="Common\b2Math.h" />
+    <ClInclude Include="Common\b2Settings.h" />
+    <ClInclude Include="Common\b2StackAllocator.h" />
+    <ClInclude Include="Common\b2Timer.h" />
+    <ClInclude Include="Dynamics\b2Body.h" />
+    <ClInclude Include="Dynamics\b2ContactManager.h" />
+    <ClInclude Include="Dynamics\b2Fixture.h" />
+    <ClInclude Include="Dynamics\b2Island.h" />
+    <ClInclude Include="Dynamics\b2TimeStep.h" />
+    <ClInclude Include="Dynamics\b2World.h" />
+    <ClInclude Include="Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="Dynamics\Contacts\b2ChainAndCircleContact.h" />
+    <ClInclude Include="Dynamics\Contacts\b2ChainAndPolygonContact.h" />
+    <ClInclude Include="Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="Dynamics\Contacts\b2EdgeAndCircleContact.h" />
+    <ClInclude Include="Dynamics\Contacts\b2EdgeAndPolygonContact.h" />
+    <ClInclude Include="Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2RopeJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="Dynamics\Joints\b2WheelJoint.h" />
+    <ClInclude Include="Rope\b2Rope.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Collision\b2BroadPhase.cpp" />
+    <ClCompile Include="Collision\b2CollideCircle.cpp" />
+    <ClCompile Include="Collision\b2CollideEdge.cpp" />
+    <ClCompile Include="Collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="Collision\b2Collision.cpp" />
+    <ClCompile Include="Collision\b2Distance.cpp" />
+    <ClCompile Include="Collision\b2DynamicTree.cpp" />
+    <ClCompile Include="Collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="Collision\Shapes\b2ChainShape.cpp" />
+    <ClCompile Include="Collision\Shapes\b2CircleShape.cpp" />
+    <ClCompile Include="Collision\Shapes\b2EdgeShape.cpp" />
+    <ClCompile Include="Collision\Shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="Common\b2BlockAllocator.cpp" />
+    <ClCompile Include="Common\b2Draw.cpp" />
+    <ClCompile Include="Common\b2Math.cpp" />
+    <ClCompile Include="Common\b2Settings.cpp" />
+    <ClCompile Include="Common\b2StackAllocator.cpp" />
+    <ClCompile Include="Common\b2Timer.cpp" />
+    <ClCompile Include="Dynamics\b2Body.cpp" />
+    <ClCompile Include="Dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="Dynamics\b2Fixture.cpp" />
+    <ClCompile Include="Dynamics\b2Island.cpp" />
+    <ClCompile Include="Dynamics\b2World.cpp" />
+    <ClCompile Include="Dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2ChainAndCircleContact.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2ChainAndPolygonContact.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2CircleContact.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2Contact.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2EdgeAndCircleContact.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2EdgeAndPolygonContact.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="Dynamics\Contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2GearJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2Joint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2MouseJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2RopeJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2WeldJoint.cpp" />
+    <ClCompile Include="Dynamics\Joints\b2WheelJoint.cpp" />
+    <ClCompile Include="Rope\b2Rope.cpp" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

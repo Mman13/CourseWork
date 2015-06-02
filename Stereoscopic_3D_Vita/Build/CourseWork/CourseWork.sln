@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "s3d_app", "s3d_app.vcxproj", "{F60D921B-D4D0-404A-A585-38FE10BCD588}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "..\abertay_framework\external\libpng\libpng.vcxproj", "{76A1FC3E-AB2B-46F6-B821-F64BC62FF7E5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "..\abertay_framework\external\zlib\zlib.vcxproj", "{11C7C0E1-0103-46A9-8E41-3CAF058CBE8F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "abertay_framework", "..\abertay_framework\abertay_framework.vcxproj", "{001D0F7F-2FA7-461E-82BF-808B1BAACF98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|D3D11 = Debug|D3D11
+		Release|D3D11 = Release|D3D11
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F60D921B-D4D0-404A-A585-38FE10BCD588}.Debug|D3D11.ActiveCfg = Debug D3D11|Win32
+		{F60D921B-D4D0-404A-A585-38FE10BCD588}.Debug|D3D11.Build.0 = Debug D3D11|Win32
+		{F60D921B-D4D0-404A-A585-38FE10BCD588}.Release|D3D11.ActiveCfg = Release D3D11|Win32
+		{F60D921B-D4D0-404A-A585-38FE10BCD588}.Release|D3D11.Build.0 = Release D3D11|Win32
+		{76A1FC3E-AB2B-46F6-B821-F64BC62FF7E5}.Debug|D3D11.ActiveCfg = Debug|Win32
+		{76A1FC3E-AB2B-46F6-B821-F64BC62FF7E5}.Debug|D3D11.Build.0 = Debug|Win32
+		{76A1FC3E-AB2B-46F6-B821-F64BC62FF7E5}.Release|D3D11.ActiveCfg = Release|Win32
+		{76A1FC3E-AB2B-46F6-B821-F64BC62FF7E5}.Release|D3D11.Build.0 = Release|Win32
+		{11C7C0E1-0103-46A9-8E41-3CAF058CBE8F}.Debug|D3D11.ActiveCfg = Debug|Win32
+		{11C7C0E1-0103-46A9-8E41-3CAF058CBE8F}.Debug|D3D11.Build.0 = Debug|Win32
+		{11C7C0E1-0103-46A9-8E41-3CAF058CBE8F}.Release|D3D11.ActiveCfg = Release|Win32
+		{11C7C0E1-0103-46A9-8E41-3CAF058CBE8F}.Release|D3D11.Build.0 = Release|Win32
+		{001D0F7F-2FA7-461E-82BF-808B1BAACF98}.Debug|D3D11.ActiveCfg = D3D11 Debug|Win32
+		{001D0F7F-2FA7-461E-82BF-808B1BAACF98}.Debug|D3D11.Build.0 = D3D11 Debug|Win32
+		{001D0F7F-2FA7-461E-82BF-808B1BAACF98}.Release|D3D11.ActiveCfg = D3D11 Release|Win32
+		{001D0F7F-2FA7-461E-82BF-808B1BAACF98}.Release|D3D11.Build.0 = D3D11 Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

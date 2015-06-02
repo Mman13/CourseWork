@@ -1,0 +1,63 @@
+#define NUM_LIGHTS 4
+
+struct VertexInput
+{
+	float3 position : POSITION;
+	float3 normal : NORMAL;
+	float2 uv : TEXCOORD0;
+};
+
+struct PixelInput
+{
+	float4 position : POSITION;
+	float3 normal : TEXCOORD0;
+	float2 uv : TEXCOORD1;
+	float3 light_vector1 : TEXCOORD2;
+	float3 light_vector2 : TEXCOORD3;
+	float3 light_vector3 : TEXCOORD4;
+	float3 light_vector4 : TEXCOORD5;
+};
+
+struct Default3DShaderData_VS
+{
+	float4x4 wvp;
+	float4x4 world;
+	float4x4 invworld;
+	float4 light_position[NUM_LIGHTS];
+};
+
+void main(
+	float3 input_position : POSITION,
+	float3 input_normal : NORMAL,
+	float2 input_uv : TEXCOORD0,
+	uniform float4x4 shader_data_wvp,
+	uniform float4x4 shader_data_world,
+	uniform float4x4 shader_data_invworld,
+	uniform float4 shader_data_light_position[NUM_LIGHTS],
+	float4 out output_position : POSITION,
+	float3 out output_normal : TEXCOORD0,
+	float2 out output_uv : TEXCOORD1,
+	float3 out output_light_vector1 : TEXCOORD2,
+	float3 out output_light_vector2 : TEXCOORD3,
+	float3 out output_light_vector3 : TEXCOORD4,
+	float3 out output_light_vector4 : TEXCOORD5
+	)
+{
+	float4 position = float4(input_position, 1);
+	output_position = mul(position, shader_data_wvp);
+	output_uv = input_uv;
+
+	float4 normal = float4(input_normal, 0);
+	normal = mul(normal, shader_data_invworld);
+	output_normal = normalize(normal.xyz);
+
+	float4 world_position = mul(position, shader_data_world);
+	output_light_vector1 = shader_data_light_position[0].xyz - world_position.xyz;
+	output_light_vector1 = normalize(output_light_vector1);
+	output_light_vector2 = shader_data_light_position[1].xyz - world_position.xyz;
+	output_light_vector2 = normalize(output_light_vector2);
+	output_light_vector3 = shader_data_light_position[2].xyz - world_position.xyz;
+	output_light_vector3 = normalize(output_light_vector3);
+	output_light_vector4 = shader_data_light_position[3].xyz - world_position.xyz;
+	output_light_vector4 = normalize(output_light_vector4);
+}

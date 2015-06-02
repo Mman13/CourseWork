@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;cc;s;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp</Extensions>
+    </Filter>
+    <Filter Include="d3d11">
+      <UniqueIdentifier>{56fb40d6-97c2-4c84-b140-efc07e25fe9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="d3d11\shaders">
+      <UniqueIdentifier>{a37976fa-40a7-4043-9217-341a93a3e3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="d3d11\shaders\Generated Header Files">
+      <UniqueIdentifier>{a6992cee-deb5-4b3b-862b-cde73a0685a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="d3d11\left_eye_3d_shader.cpp">
+      <Filter>d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d11\right_eye_3d_shader.cpp">
+      <Filter>d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d11\s3d_shader_d3d11.cpp">
+      <Filter>d3d11</Filter>
+    </ClCompile>
+    <ClCompile Include="s3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="d3d11\left_eye_3d_shader.h">
+      <Filter>d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d11\right_eye_3d_shader.h">
+      <Filter>d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d11\s3d_shader_d3d11.h">
+      <Filter>d3d11</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d11\shaders\s3d_ps.h">
+      <Filter>d3d11\shaders\Generated Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="s3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="d3d11\shaders\s3d_ps.hlsl">
+      <Filter>d3d11\shaders</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
