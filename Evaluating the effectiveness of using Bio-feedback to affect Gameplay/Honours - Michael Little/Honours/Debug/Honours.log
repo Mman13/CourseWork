@@ -1,0 +1,128 @@
+﻿Build started 06/04/2015 13:27:31.
+     1>Project "C:\Coursework\year 4\Honours project\Honours - Michael Little\Honours\Honours.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Honours.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Coursework\year 4\Honours project\Honours - Michael Little\SFML-2.2\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D SFML_STATIC /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ShootererScreen.cpp
+         ShootererScreen.cpp
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(9): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(28): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(28): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(191): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(206): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(206): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(209): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(209): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(236): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(236): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(259): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(320): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(370): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(428): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(434): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(446): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(470): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(478): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(478): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(481): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(481): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(485): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(485): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(495): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(495): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(503): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(503): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(513): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(513): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(523): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(523): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(533): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\coursework\year 4\honours project\honours - michael little\honours\shootererscreen.cpp(533): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\Honours.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Coursework\year 4\Honours project\Honours - Michael Little\SFML-2.2\lib" edk.lib opengl32.lib "sfml-graphics-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" "sfml-audio-s-d.lib" "sfml-network-s-d.lib" "sfml-main-d.lib" openal32.lib sndfile.lib jpeg.lib glew.lib freetype.lib ws2_32.lib gdi32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Honours.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\Honours.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\Honours.lib" /MACHINE:X86 Debug\Animation.obj
+         Debug\Boss.obj
+         Debug\Bullet.obj
+         Debug\Emotiv.obj
+         Debug\EmotivShooterScreen.obj
+         Debug\Enemy.obj
+         Debug\EnemyFire.obj
+         Debug\FadeAnimation.obj
+         Debug\FileManager.obj
+         Debug\GameScreen.obj
+         Debug\GlobalVariables.obj
+         Debug\InputManager.obj
+         Debug\LoadBitmap.obj
+         Debug\main.obj
+         Debug\MenuManager.obj
+         Debug\ShootererScreen.obj
+         Debug\Player.obj
+         Debug\ScreenManager.obj
+         Debug\SplashScreen.obj
+         Debug\SpriteAnimation.obj
+         Debug\Sprites.obj
+         Debug\TitleScreen.obj
+     1>Animation.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+     1>sfml-graphics-s-d.lib(BlendMode.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(BlendMode.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Color.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Color.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Font.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Font.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(GLCheck.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(GLCheck.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(GLExtensions.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(GLExtensions.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Image.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Image.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(ImageLoader.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(ImageLoader.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(RenderStates.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(RenderStates.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(RenderTarget.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(RenderTarget.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(RenderWindow.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(RenderWindow.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Shader.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Shader.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Texture.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Texture.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(TextureSaver.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(TextureSaver.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Transform.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Transform.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Transformable.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Transformable.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(View.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(View.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Vertex.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Vertex.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Shape.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Shape.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(RectangleShape.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(RectangleShape.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Sprite.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Sprite.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Text.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(Text.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(VertexArray.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-graphics-s-d.lib(VertexArray.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(Context.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(Context.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(GlContext.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(GlContext.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(GlResource.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(GlResource.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(Joystick.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(Joystick.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(JoystickManager.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(JoystickManager.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(Keyboard.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(Keyboard.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(Mouse.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(Mouse.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(SensorManager.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(SensorManager.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(VideoMode.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(VideoMode.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(Window.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(Window.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(WindowImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(WindowImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(WglContext.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(WglContext.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(InputImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(InputImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(JoystickImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(JoystickImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(SensorImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(SensorImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(VideoModeImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(VideoModeImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-window-s-d.lib(WindowImplWin32.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(Clock.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(Clock.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(Err.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(Err.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(Lock.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(Lock.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(Mutex.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(Mutex.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(Sleep.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(Sleep.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(String.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(String.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(Thread.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(Thread.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(ThreadLocal.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(ThreadLocal.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(Time.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(Time.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(ClockImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(ClockImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(MutexImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(MutexImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(SleepImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(SleepImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(ThreadImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(ThreadImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+     1>sfml-system-s-d.lib(ThreadLocalImpl.cpp.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'sfml-system-s-d.lib(ThreadLocalImpl.cpp.obj)' or at 'C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\vc100.pdb'; linking object as if no debug info
+         Honours.vcxproj -> C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\Honours.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Coursework\year 4\Honours project\Honours - Michael Little\Debug\Honours.exe;#1" /manifest Debug\Honours.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Honours.unsuccessfulbuild".
+         Touching "Debug\Honours.lastbuildstate".
+     1>Done Building Project "C:\Coursework\year 4\Honours project\Honours - Michael Little\Honours\Honours.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.27

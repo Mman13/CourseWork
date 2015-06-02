@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\EDK">
+      <UniqueIdentifier>{2983b372-adcb-4ffa-9284-7beaa9f52ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{84bd6d73-14f9-4311-827a-f4bfa6cb6c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{ff0b2b63-9dd6-49a6-b01d-652b1ebf88aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Screens">
+      <UniqueIdentifier>{ef1a7deb-03d1-4298-8d4e-a658ab48985d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Screens">
+      <UniqueIdentifier>{e1e4e12b-6f13-4897-a58c-b2f183dd9b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Animation">
+      <UniqueIdentifier>{ed617682-d4e4-430e-bc68-b5cc026e5238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Animation">
+      <UniqueIdentifier>{b9749765-8186-423a-a707-f99005127c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Files">
+      <UniqueIdentifier>{63f6b37e-fbad-44eb-80cf-33ef60823a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Files">
+      <UniqueIdentifier>{959c2f96-03bc-47dd-961b-6b328e13e9a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Menus">
+      <UniqueIdentifier>{b47e24af-169a-48ad-9e1b-f93e8858f884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Menus">
+      <UniqueIdentifier>{7746d81e-b7bd-4022-994b-c9ece4bec05e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Entities">
+      <UniqueIdentifier>{26e41e40-16c8-46d4-a25e-ec9652aa1428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Entites">
+      <UniqueIdentifier>{713d6880-8c77-493c-877d-afe9007905a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\System">
+      <UniqueIdentifier>{e362c40c-7ca4-487a-a7a3-13264c435502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\System">
+      <UniqueIdentifier>{e87caaf7-41bc-498f-ac9d-42836d35945a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Emotiv">
+      <UniqueIdentifier>{4efd2060-9d7c-4fc2-925b-6debad97a21f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Emotiv">
+      <UniqueIdentifier>{ff1d3c5a-7f6a-4a3c-a657-77ef9946204e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScreen.cpp">
+      <Filter>Source Files\Game\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashScreen.cpp">
+      <Filter>Source Files\Game\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScreen.cpp">
+      <Filter>Source Files\Game\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>Source Files\Game\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\Game\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeAnimation.cpp">
+      <Filter>Source Files\Game\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Source Files\Game\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuManager.cpp">
+      <Filter>Source Files\Game\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteAnimation.cpp">
+      <Filter>Source Files\Game\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprites.cpp">
+      <Filter>Source Files\Game\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Game\Entites</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Source Files\Game\Entites</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Emotiv.cpp">
+      <Filter>Source Files\Emotiv</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadBitmap.cpp">
+      <Filter>Source Files\Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Source Files\Game\Entites</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootererScreen.cpp">
+      <Filter>Source Files\Game\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Source Files\Game\Entites</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFire.cpp">
+      <Filter>Source Files\Game\Entites</Filter>
+    </ClCompile>
+    <ClCompile Include="EmotivShooterScreen.cpp">
+      <Filter>Source Files\Game\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalVariables.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\edk.h">
+      <Filter>Header Files\EDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\edkErrorCode.h">
+      <Filter>Header Files\EDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\EmoStateDLL.h">
+      <Filter>Header Files\EDK</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScreen.h">
+      <Filter>Header Files\Game\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashScreen.h">
+      <Filter>Header Files\Game\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>Header Files\Game\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreen.h">
+      <Filter>Header Files\Game\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Header Files\Game\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeAnimation.h">
+      <Filter>Header Files\Game\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>Header Files\Game\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuManager.h">
+      <Filter>Header Files\Game\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteAnimation.h">
+      <Filter>Header Files\Game\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprites.h">
+      <Filter>Header Files\Game\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files\Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Emotiv.h">
+      <Filter>Header Files\Emotiv</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadBitmap.h">
+      <Filter>Header Files\Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Header Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="ShooterScreen.h">
+      <Filter>Header Files\Game\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>Header Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFire.h">
+      <Filter>Header Files\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="EmotivShooterScreen.h">
+      <Filter>Header Files\Game\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVariables.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

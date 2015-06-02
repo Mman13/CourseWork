@@ -1,0 +1,11 @@
+Start=[Title]
+
+Load=[Position][Axis][Animation][Align]
+[100,100][2][Fade][None]
+
+Load=[Item]
+[SpaceShooter 1]
+[SpaceShooter 2]
+[Exit]
+
+End=[Title]
