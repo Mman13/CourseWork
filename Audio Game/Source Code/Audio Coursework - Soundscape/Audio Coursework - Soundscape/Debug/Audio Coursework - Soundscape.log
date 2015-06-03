@@ -1,0 +1,51 @@
+﻿Build started 08/05/2014 17:36:34.
+     1>Project "E:\year 3\Audio\Auidio Programing Coursework - Michael Little\Source Code\Audio Coursework - Soundscape\Audio Coursework - Soundscape\Audio Coursework - Soundscape.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Audio Coursework - Soundscape.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Camera.cpp framework\GameTimer.cpp framework\PCMWave.cpp Framework\Updateable.cpp framework\WaveFileManager.cpp framework\WinCore.cpp framework\XACore.cpp framework\XASound.cpp Main_Soundscape.cpp Map.cpp Sounds.cpp SoundscapeControl.cpp StuVector\StuVector3.cpp
+         StuVector3.cpp
+         SoundscapeControl.cpp
+     1>e:\year 3\audio\auidio programing coursework - michael little\source code\audio coursework - soundscape\audio coursework - soundscape\soundscapecontrol.cpp(186): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>e:\year 3\audio\auidio programing coursework - michael little\source code\audio coursework - soundscape\audio coursework - soundscape\soundscapecontrol.cpp(354): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+         Sounds.cpp
+     1>e:\year 3\audio\auidio programing coursework - michael little\source code\audio coursework - soundscape\audio coursework - soundscape\sounds.cpp(62): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>e:\year 3\audio\auidio programing coursework - michael little\source code\audio coursework - soundscape\audio coursework - soundscape\sounds.cpp(63): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>e:\year 3\audio\auidio programing coursework - michael little\source code\audio coursework - soundscape\audio coursework - soundscape\sounds.cpp(64): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+         Map.cpp
+         Main_Soundscape.cpp
+         XASound.cpp
+         XACore.cpp
+         WinCore.cpp
+         WaveFileManager.cpp
+         Updateable.cpp
+         PCMWave.cpp
+         GameTimer.cpp
+         Camera.cpp
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\year 3\Audio\Auidio Programing Coursework - Michael Little\Source Code\Audio Coursework - Soundscape\Debug\Audio Coursework - Soundscape.exe" /NOLOGO XAPOBaseD.lib x3daudio.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Audio Coursework - Soundscape.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\year 3\Audio\Auidio Programing Coursework - Michael Little\Source Code\Audio Coursework - Soundscape\Debug\Audio Coursework - Soundscape.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\year 3\Audio\Auidio Programing Coursework - Michael Little\Source Code\Audio Coursework - Soundscape\Debug\Audio Coursework - Soundscape.lib" /MACHINE:X86 Debug\Camera.obj
+         Debug\GameTimer.obj
+         Debug\PCMWave.obj
+         Debug\Updateable.obj
+         Debug\WaveFileManager.obj
+         Debug\WinCore.obj
+         Debug\XACore.obj
+         Debug\XASound.obj
+         Debug\Main_Soundscape.obj
+         Debug\Map.obj
+         Debug\Sounds.obj
+         Debug\SoundscapeControl.obj
+         Debug\StuVector3.obj
+         LINK : E:\year 3\Audio\Auidio Programing Coursework - Michael Little\Source Code\Audio Coursework - Soundscape\Debug\Audio Coursework - Soundscape.exe not found or not built by the last incremental link; performing full link
+         Audio Coursework - Soundscape.vcxproj -> E:\year 3\Audio\Auidio Programing Coursework - Michael Little\Source Code\Audio Coursework - Soundscape\Debug\Audio Coursework - Soundscape.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\year 3\Audio\Auidio Programing Coursework - Michael Little\Source Code\Audio Coursework - Soundscape\Debug\Audio Coursework - Soundscape.exe;#1" /manifest "Debug\Audio Coursework - Soundscape.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\Audio Coursework - Soundscape.unsuccessfulbuild".
+         Touching "Debug\Audio Coursework - Soundscape.lastbuildstate".
+     1>Done Building Project "E:\year 3\Audio\Auidio Programing Coursework - Michael Little\Source Code\Audio Coursework - Soundscape\Audio Coursework - Soundscape\Audio Coursework - Soundscape.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:23.36
