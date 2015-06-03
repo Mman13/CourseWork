@@ -1,0 +1,70 @@
+﻿Build started 13/01/2014 11:23:33.
+     1>Project "M:\Year 3\DirectX\Coursework Submission - Michael Little 1103677\Source Code\Coursework Scene\Coursework Scene.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\Coursework Scene.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt BumpMapShader.cpp Camera.cpp D3D.cpp DebugWindow.cpp FireClass.cpp FireShader.cpp FogShader.cpp Font.cpp FontShader.cpp Graphics.cpp LightClass.cpp LightShader.cpp Main.cpp Model.cpp OceanShader.cpp ParticleShader.cpp ParticleSystem.cpp PlaneClass.cpp ReflectionShader.cpp RefractionShader.cpp RTmodel.cpp SystemClass.cpp Terrain.cpp TerrainShader.cpp Text.cpp Texture.cpp TextureArray.cpp TextureShader.cpp WaterShader.cpp
+         BumpMapShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\BumpMapShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Camera.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\Camera.h(10): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         D3D.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\D3D.h(21): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         DebugWindow.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\DebugWindow.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         FireClass.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\FireClass.h(12): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         FireShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\FireShader.h(12): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         FogShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\FogShader.h(12): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Font.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\Font.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         FontShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\FontShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Graphics.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\D3D.h(21): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         LightClass.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\LightClass.h(10): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         LightShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\LightShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Main.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\D3D.h(21): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Model.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\Model.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         OceanShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\OceanShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         ParticleShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\ParticleShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         ParticleSystem.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\ParticleSystem.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         PlaneClass.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\PlaneClass.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         ReflectionShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\ReflectionShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         RefractionShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\RefractionShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Compiling...
+         RTmodel.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\RTmodel.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         SystemClass.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\D3D.h(21): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Terrain.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\Terrain.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         TerrainShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\TerrainShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Text.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\Font.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         Texture.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\Texture.h(11): fatal error C1083: Cannot open include file: 'd3dx11tex.h': No such file or directory
+         TextureArray.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\TextureArray.h(11): fatal error C1083: Cannot open include file: 'd3dx11tex.h': No such file or directory
+         TextureShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\TextureShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+         WaterShader.cpp
+     1>m:\year 3\directx\coursework submission - michael little 1103677\source code\coursework scene\WaterShader.h(11): fatal error C1083: Cannot open include file: 'd3dx10math.h': No such file or directory
+     1>Done Building Project "M:\Year 3\DirectX\Coursework Submission - Michael Little 1103677\Source Code\Coursework Scene\Coursework Scene.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:09.96

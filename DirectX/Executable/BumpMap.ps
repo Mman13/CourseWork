@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: BumpMap.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+Texture2D shaderTextures[2];
+SamplerState SampleType;
+
+cbuffer LightBuffer
+{
+	float4 ambientColor;
+    float4 diffuseColor;
+    float3 lightDirection;
+};
+
+// TYPEDEFS //
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+    float3 normal : NORMAL;
+    float3 tangent : TANGENT;
+    float3 binormal : BINORMAL;
+};
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+
+float4 BumpMapPixelShader(PixelInputType input) : SV_TARGET
+{
+    float4 textureColor;
+    float4 bumpMap;
+    float3 bumpNormal;
+    float3 lightDir;
+    float lightIntensity;
+    float4 color;
+
+	textureColor = shaderTextures[0].Sample(SampleType, input.tex);
+
+	bumpMap = shaderTextures[1].Sample(SampleType, input.tex);
+
+	// Expand the range of the normal value from (0, +1) to (-1, +1).
+	// the sampled value that is presented to us in the 0.0 to +1.0 texture range which only covers half the range we need for bump map normal calculations
+	bumpMap = (bumpMap * 20.0f) - 10.0f;
+
+	// Calculate the normal from the data in the bump map.
+	bumpNormal = input.normal + bumpMap.x * input.tangent + bumpMap.y * input.binormal;
+
+	bumpNormal = normalize(bumpNormal);
+
+	// Sets the default output color to the ambient light value for all pixels.
+	color = ambientColor;
+
+	lightDir = -lightDirection;
+
+	// Calculate light on this pixel based on the bump map normal value.
+	lightIntensity = saturate(dot(bumpNormal, lightDir));
+
+
+	if(lightIntensity > 0) {
+		color += saturate(diffuseColor * lightIntensity);
+	}
+
+	color = color * textureColor;
+
+    return color;
+}

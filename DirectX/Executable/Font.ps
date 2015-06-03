@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Font.ps
+////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////
+// GLOBALS //
+/////////////
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+cbuffer PixelBuffer
+{
+    float4 pixelColor;
+};
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 FontPixelShader(PixelInputType input) : SV_TARGET
+{
+    float4 color;
+
+    color = shaderTexture.Sample(SampleType, input.tex);
+
+    // If the colour is black treat this pixel as transparent.
+    if(color.r == 0.0f)
+    {
+        color.a = 0.0f;
+    }
+    else
+    {
+        color.a = 1.0f;
+        color = color * pixelColor;
+    }
+
+    return color;
+}
+
+

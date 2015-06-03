@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Coursework Scene", "Coursework Scene\Coursework Scene.vcxproj", "{75DBE4E8-4E9C-485B-81EA-99BED0C5C100}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75DBE4E8-4E9C-485B-81EA-99BED0C5C100}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75DBE4E8-4E9C-485B-81EA-99BED0C5C100}.Debug|Win32.Build.0 = Debug|Win32
+		{75DBE4E8-4E9C-485B-81EA-99BED0C5C100}.Release|Win32.ActiveCfg = Release|Win32
+		{75DBE4E8-4E9C-485B-81EA-99BED0C5C100}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

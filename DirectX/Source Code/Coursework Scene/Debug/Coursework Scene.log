@@ -1,0 +1,20 @@
+﻿Build started 15/01/2014 14:36:48.
+     1>Project "M:\Year 3\DirectX\Coursework Submission - Michael Little 1103677\Source Code\Coursework Scene\Coursework Scene.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Coursework Scene.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\Coursework Scene.unsuccessfulbuild".
+         Touching "Debug\Coursework Scene.lastbuildstate".
+     1>Done Building Project "M:\Year 3\DirectX\Coursework Submission - Michael Little 1103677\Source Code\Coursework Scene\Coursework Scene.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.34

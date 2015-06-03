@@ -1,0 +1,19 @@
+Coursework Scene by Michael Little - 1103677 CGAD 3rd year
+
+
+Controls:
+
+Movement.
+Left = A
+Right = D
+Forward = W
+Back = S
+
+Camera.
+Rotate Left = J
+Rotate Right = L
+Rotate Down = I
+Rotate up = K
+
+Note.
+Only diffrence between the source code and the executable is the file paths, I had to do this to get it to run.
